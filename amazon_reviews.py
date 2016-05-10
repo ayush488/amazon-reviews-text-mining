@@ -97,7 +97,6 @@ def plot_frequency(words, limit):
              "Word Count": values}
 
     df = pd.DataFrame(stats, index=[range(1, limit + 1)])
-    print df[["Word","Word Count"]]
 
     pos = np.arange(len(top_words))
     ax = plt.axes()
